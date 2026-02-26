@@ -1,0 +1,35 @@
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+:focus,
+:active{
+  outline-color: transparent;
+}
+button, input{
+  font: inherit;
+  color: interit;
+}
+
+button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
