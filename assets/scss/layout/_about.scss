@@ -1,0 +1,220 @@
+// External dependencies (Mixins, Variables, etc.)
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../base/base" as *;
+@use "../components/container" as *;
+@use "../base/reset" as *;
+
+.about {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  &__content {
+    // Style the container elements
+    width: 272px;
+    height: 1131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+    .about__header {
+      // Style the about__header elements
+      max-width: 272px;
+      width: 100%;
+      height: 174px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 26px;
+      > h2 {
+        font-family: $ff-primary;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.2px;
+        color: #183b56;
+      }
+      > p {
+        font-family: $ff-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: #000000;
+      }
+    }
+    .about__grid {
+      // Style the about__grid elements
+      max-width: 272px;
+      width: 100%;
+      height: auto;
+      gap: 26px;
+      @include flex-column-center;
+    }
+    .about__card {
+      // Style the about__grid's about__card elements
+      max-width: 264px;
+      width: 264px;
+      height: 272px;
+      @include flex-column-center;
+      position: relative;
+      .about__icon-wrapper {
+        // Style the about__card's about__icon-wrapper elements
+        width: 50.52px;
+        height: 50.52px;
+        border-radius: 50px;
+        background-color: $theme-main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        .img {
+          width: 16.67px;
+          height: 23.24px;
+          object-fit: contain;
+        }
+      }
+      .about__card-text {
+        // Style the about__card's about__card-text elements
+        @include flex-column-center;
+        text-align: center;
+        width: 218px;
+        height: 145px;
+        gap: 10.67px;
+        z-index: 1;
+        margin-top: 28.46px;
+        > h3 {
+          font-family: $ff-headers;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #000000;
+        }
+        > p {
+          font-family: $ff-secondary;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 180%;
+          letter-spacing: 0%;
+          color: #071210;
+        }
+      }
+      .about__card-bg {
+        // Style the about__card's bg
+        background-color: $card-bg-color;
+        box-shadow: 1.42px 2.85px 27.04px rgba(0, 0, 0, 0.08);
+        width: 264px;
+        height: 243px;
+        border-radius: 11.39px;
+        position: absolute;
+        top: 29.18px;
+        left: 0;
+      }
+    }
+
+    .button {
+      // Style the button element
+      background-color: $theme-main-color;
+      width: 105px;
+      height: 37px;
+      border-radius: 8px;
+      margin: 0 auto;
+      font-family: $ff-secondary;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #ffffff;
+    }
+  }
+  .footer-circle {
+    width: 129.81px;
+    height: 129.81px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 5.96px solid #052a44;
+    position: absolute;
+    display: none;
+  }
+}
+// DESKTOP RESPONSIVE STYLES (Min-width: 678px)
+//  This block handles the transition from mobile layout to a large screen.
+@media screen and (min-width: 678px) {
+  .about {
+    width: 1240px;
+    max-width: 1240px;
+    min-height: 731px;
+    position: relative;
+    @include flex-column-center;
+    &__content {
+      width: 1161px;
+      height: 571px;
+      @include flex-column-center;
+      .about__header {
+        max-width: 1034px;
+        width: 1034px;
+        height: 103px;
+        flex-shrink: 0;
+        margin-bottom: 40px;
+      }
+      .about__grid {
+        max-width: 1161px;
+        width: 1161px;
+        height: 314px;
+        @include flex-row-center-space-between();
+
+        .about__card {
+          max-width: 371px;
+          width: 371px;
+          height: 314px;
+
+          .about__icon-wrapper {
+            width: 71px;
+            height: 71px;
+            > img {
+              min-width: 23.43px;
+              width: 23.43px;
+              height: 32.66px;
+            }
+          }
+
+          .about__card-text {
+            width: 307px;
+            height: 133px;
+            margin-top: 40px;
+            > h3 {
+              font-size: 22px;
+              margin-bottom: 15px;
+            }
+            > p {
+              max-width: 260px;
+              font-size: 16.59px;
+            }
+          }
+          .about__card-bg {
+            width: 100%;
+            height: 273px;
+            top: 41px;
+            left: 0;
+          }
+        }
+      }
+      .button {
+        width: 176px;
+        height: 54px;
+      }
+    }
+    .footer-circle {
+      display: flex;
+      position: absolute;
+      top: 500px;
+      left: 10px;
+      z-index: -1;
+    }
+  }
+}
