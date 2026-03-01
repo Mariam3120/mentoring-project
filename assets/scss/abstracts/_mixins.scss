@@ -20,13 +20,13 @@
    
 }
 
-@mixin flex-center($direction, $gap){
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction; 
-  gap: $gap;
-}
+// @mixin flex-center($direction, $gap){
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: $direction; 
+//   gap: $gap;
+// }
 @mixin flex-column-space-between() {
   display: flex;
   flex-direction: column;
@@ -41,16 +41,23 @@
   position: relative;
 }
 
-@mixin flex-center() {
+// @mixin flex-center() {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// @mixin flex-column-center() {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+// }
+@mixin flex-center($direction: row, $gap: 0) {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@mixin flex-column-center() {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: $direction; 
+  gap: $gap;
 }
 @mixin flex-column--align-center() {
   display: flex;

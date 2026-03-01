@@ -104,7 +104,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 .about__content .about__card {
   max-width: 264px;
@@ -113,7 +112,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   position: relative;
 }
 .about__content .about__card .about__icon-wrapper {
@@ -135,7 +133,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   text-align: center;
   width: 218px;
   height: 145px;
@@ -204,7 +201,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
   .about__content {
     width: 1161px;
@@ -212,7 +208,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
   .about__content .about__header {
     max-width: 1034px;
@@ -392,37 +387,34 @@ button {
   justify-content: flex-end;
   align-items: center;
   flex: 1;
-  width: 588px;
-  height: 538px;
+  max-width: 588px;
 }
 .hero-wrapper-image-side .hero-wrapper-bg {
   position: relative;
   height: 75%;
   border-radius: 8.6px;
   background-color: #e8db84;
+  width: clamp(250px, 80%, 506px);
+  height: clamp(218px, 45vw, 506px);
 }
 .hero-wrapper-image-side .hero-wrapper-bg img {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .hero-wrapper-image-side .hero-wrapper-bg img {
-    width: 421px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  width: clamp(180px, 38vw, 420px);
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media (min-width: 992px) {
   .hero-wrapper-image-side .hero-wrapper-bg {
-    width: 80%;
-    height: 50%;
+    width: 506px;
+    height: 408px;
   }
 }
 .hero-wrapper-stats {
   position: absolute;
-  left: 0;
-  top: 62%;
+  left: 40px;
+  top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -479,6 +471,7 @@ button {
   color: #ffffff;
   font-size: 10px;
 }
+
 .services {
   background-color: #e8db84;
   max-width: 278px;
@@ -496,7 +489,7 @@ button {
   height: 224px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 .services__header > h2 {
   font-family: "Poppins", sans-serif;
@@ -543,6 +536,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
   margin-right: 18px;
 }
 .services__media {
@@ -860,6 +855,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
   margin-right: 18px;
 }
 .stories__text-wrapper .stories__button {
