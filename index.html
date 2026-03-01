@@ -18,7 +18,7 @@
 
 
     </section>
-    <!-- This is where the About Us section begins, using 1 main container and the "about__content" and "about__card" containers and button inside it. -->
+    <!-- This is where the About Us section begins, using 1 main container and the "about__content" and "div class="services__media" containers and button inside it. -->
     <section class="about">
       <!-- Start of main container -->
       <div class="about__content">
@@ -34,7 +34,7 @@
           <!--The beginning of about__card, each using a photo wrapper and text field, as well as a back page container-->
           <article class="about__card">
             <div class="about__icon-wrapper">
-              <img src="../mentoring-project/assets/photos/file-invoice.png" alt="file-invoice">
+              <img src="/assets/photos/file-invoice.png" alt="file-invoice">
             </div>
             <div class="about__card-text">
               <h3>Mission</h3>
@@ -46,7 +46,7 @@
           <!-- start of article -->
           <article class="about__card">
             <div class="about__icon-wrapper">
-              <img src="../mentoring-project/assets/photos/file-invoice.png" alt="file-invoice">
+              <img src="/assets/photos/file-invoice.png" alt="file-invoice">
             </div>
             <div class="about__card-text">
               <h3>Values</h3>
@@ -58,7 +58,7 @@
           <!-- start of article -->
           <article class="about__card">
             <div class="about__icon-wrapper">
-              <img src="../mentoring-project/assets/photos/file-invoice.png" alt="file-invoice">
+              <img src="/assets/photos/file-invoice.png" alt="file-invoice">
             </div>
             <div class="about__card-text">
               <h3>Unique Selling Points</h3>
@@ -74,8 +74,64 @@
       </div>
       <div class="footer-circle"></div>
     </section>
+    <!-- This is where the services section begins, using 3 container the "header class="services__header"  and "article class="services__list"" containers and button inside it. -->
     <section class="services">
-
+      <!-- Start of about__header -->
+      <header class="services__header">
+        <h2>Our Services</h2>
+        <p>Teachers don’t get lost in the grid view and have a dedicated Podium space.
+          Teachers don’t get lost in the grid view and have a dedicated Podium space.
+        </p>
+      </header>
+      <!--Here is an article container with 3 smaller containers inside it to create a list view.-->
+      <article class="services__list">
+        <!-- Here is a small container that contains the photo's logo and description. -->
+        <div class="services__item">
+          <div class="services__icon-wrapper">
+            <img src="/assets/photos/small-bag.png" alt="small-bag">
+          </div>
+          <span>Personality Assessment</span>
+        </div>
+        <!-- Here is a small container that contains the photo's logo and description. -->
+        <div class="services__item">
+          <div class="services__icon-wrapper">
+            <img src="/assets/photos/small-bag.png" alt="small-bag">
+          </div>
+          <span>Skill Evaluations</span>
+        </div>
+        <!-- Here is a small container that contains the photo's logo and description. -->
+        <div class="services__item">
+          <div class="services__icon-wrapper">
+            <img src="/assets/photos/small-bag.png" alt="small-bag">
+          </div>
+          <span>Career Workshop</span>
+        </div>
+        <!-- End of article -->
+      </article>
+      <!-- Here is a media block with 3 small colored buttons on top, 3 main photos, and a colored circle as a decoration. -->
+      <div class="services__media">
+        <div class="services__media-content">
+          <div class="services__media-content-header">
+            <span class="span-color-red"></span>
+            <span class="span-color-orange"></span>
+            <span class="span-color-green"></span>
+          </div>
+          <div class="services__media-content-body">
+            <div>
+              <img src="/assets/photos/portrait-teacher.jpg" alt="portrait-teacher">
+            </div>
+            <div>
+              <img src="/assets/photos/Mask-left.jpg" alt="Mask-left">
+            </div>
+            <div>
+              <img src="/assets/photos/Mask-right.jpg" alt="Mask-right">
+            </div>
+          </div>
+        </div>
+        <div class="services__media-content-decor"></div>
+      </div>
+      <!-- start of button -->
+      <button class="services__button">Get Started</button>
     </section>
     <section class="stories">
 

@@ -10,3 +10,23 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin flex-column-space-between() {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column-center-relative() {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  position: relative;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
