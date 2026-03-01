@@ -11,6 +11,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   &__content {
     // Style the container elements
     width: 272px;
@@ -129,6 +130,8 @@
       line-height: 100%;
       letter-spacing: 0%;
       color: #ffffff;
+      border: none;
+      cursor: pointer;
     }
   }
   .footer-circle {
